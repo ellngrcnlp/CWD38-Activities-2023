@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/d1f4009ec4.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+     <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="class navbar-fixed">
+        <nav class="black lighten-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://materializecss.com/" target="_blank" class="center brand-logo">
+                        <img class="materialize-logo" src="//themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="Materialize">
+                    </a>
+                    <a href="https://materializecss.com/sidenav.html" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul id="nav-mobile1" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="https://materializecss.com/about.html" target="_blank">About</a>
+                        </li>
+                        <li>
+                            <a href="https://materializecss.com/showcase.html" target="_blank">Showcase</a>
+                        </li>
+                        <li>
+                            <a href="https://materializecss.com/getting-started.html" target="_blank">Getting Started</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" href="https://materializecss.com/" data-target="dropdown1">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+                <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li>
+                            <a href="https://materializecss.com/sidenav.html" target="_blank">Sidenav</a></li>
+                        <li>
+                            <a href="https://materializecss.com/navbar.html" target="_blank">Navbar</a></li>
+                        <li>
+                            <div class="divider"></div></li>
+                        <li>
+                            <a href="https://materializecss.com/dropdown.html" target="_blank">Dropdown</a></li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your &lt;ul&gt; that contains them.</p>
+
+        <nav class="yellow darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="left brand-logo">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-small-only">
+                        <li>
+                            <a href="https://fontawesome.com/kits" target="_blank">Your Kits</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/search" target="_blank">Search</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/icons" target="_blank">Icons</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/docs" target="_blank">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/plans" target="_blank">Plans</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/support" target="_blank">Support</a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your &lt;ul&gt; that contains them.</p>
+        <nav class="grey lighten-1">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://github.com/" target="_blank" class="right brand-logo black-text">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li>
+                            <a href="https://github.com/dashboard" target="_blank" class="black-text">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/issues" target="_blank" class="black-text">Issues</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pulls" target="_blank" class="black-text">Pull Request</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/discussions" target="_blank" class="black-text">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/codespaces" target="_blank" class="black-text">Codespaces</a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your &lt;a class="brand-logo"&gt;. You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav class="red darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.youtube.com/" target="_blank" class="center brand-logo">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li>
+                            <a href="https://www.youtube.com/shorts/" target="_blank">Shorts</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/feed/trending?/" target="_blank">Trending</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/feed/subscriptions" target="_blank">Subscriptions</a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav class="blue darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.facebook.com/" target="_blank" class="center brand-logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li class="active">
+                            <a href="https://www.facebook.com/" target="_blank">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/watch/?ref=tab" target="_blank">Watch</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/marketplace/?ref=app_tab" target="_blank">Marketplace</a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <!-- Navbar Extended -->
+        <nav class="pink nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.instagram.com/" target="_blank" class="center brand-logo">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" data-target="mobile-demo2" class="sidenav-trigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul id="nav-mobile2" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="https://www.instagram.com/explore/" target="_blank">Explore</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/reels/" target="_blank">Reels</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/direct/inbox/" target="_blank">Messages</a>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a href="#test1">Test 1</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test2">Test 2</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test3">Test 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Tabs structure -->
+        <div class="row">
+            <div class="col s12" id="test1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/img5.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="test2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/img2.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="test3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/img3.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidenav structure for Extended Navbar with Tabs -->
+        <ul class="sidenav" id="mobile-demo2">
+            <li>
+                <a href="https://www.instagram.com/explore/" target="_blank">Explore</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/reels/" target="_blank">Reels</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/direct/inbox/" target="_blank">Messages</a>
+            </li>
+        </ul>
+
+        <!-- Sidenav structure -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="https://materializecss.com/about.html" target="_blank">About</a>
+            </li>
+            <li>
+                <a href="https://materializecss.com/showcase.html" target="_blank">Showcase</a>
+            </li>
+            <li>
+                <a href="https://materializecss.com/getting-started.html" target="_blank">Getting Started</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div style="height:1000px;"></div>
+
+     <!-- Jquery CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script>
+        $(document).ready(function() {
+            // Tabs Init
+                $('.tabs').tabs(); 
+            // Sidenav Init
+                $('.sidenav').sidenav({
+                    inDuration: 1000,
+                    outDuration: 1000
+                });
+            // Dropdown Init
+                $('.dropdown-trigger').dropdown();
+        });
+     </script>
+</body>
+</html>
